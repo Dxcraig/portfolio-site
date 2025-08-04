@@ -8,43 +8,48 @@ import { Component } from '@angular/core';
 })
 export class SkillsComponent {
 
-  frontends = [
-    { name: 'Angular', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/angular/angular-original.svg', isInvertLogo: false },
-    { name: 'HTML', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/html5/html5-original.svg', isInvertLogo: false },
-    { name: 'CSS', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/css3/css3-original.svg', isInvertLogo: false },
-    { name: 'Angular Material', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/angularmaterial/angularmaterial-original.svg', isInvertLogo: false },
-    { name: 'Bootstrap', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/bootstrap/bootstrap-original.svg', isInvertLogo: false },
-    { name: 'JavaScript', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/javascript/javascript-original.svg', isInvertLogo: false },
-    { name: 'TypeScript', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/typescript/typescript-original.svg', isInvertLogo: false },
-    { name: 'Tailwind', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/tailwindcss/tailwindcss-original.svg', isInvertLogo: false }
+  dataSciences = [
+    { name: 'Python', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/python/python-original.svg', isInvertLogo: false },
+    { name: 'R', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/r/r-original.svg', isInvertLogo: false },
+    { name: 'Pandas', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/pandas/pandas-original.svg', isInvertLogo: false },
+    { name: 'NumPy', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/numpy/numpy-original.svg', isInvertLogo: false },
+    { name: 'Jupyter', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/jupyter/jupyter-original.svg', isInvertLogo: false },
+    { name: 'TensorFlow', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/tensorflow/tensorflow-original.svg', isInvertLogo: false },
+    { name: 'Matplotlib', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/matplotlib/matplotlib-original.svg', isInvertLogo: false },
+    { name: 'Scikit-learn', logo: 'https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg', isInvertLogo: false }
   ];
 
-  backends = [
-    { name: 'C#', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/csharp/csharp-original.svg', isInvertLogo: false },
-    { name: '.Net', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/dotnetcore/dotnetcore-original.svg', isInvertLogo: false },
+  programmings = [
     { name: 'Python', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/python/python-original.svg', isInvertLogo: false },
-    { name: 'Entity Framework', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/microsoftsqlserver/microsoftsqlserver-plain.svg', isInvertLogo: false },
-    { name: 'Node.js', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/nodejs/nodejs-original.svg', isInvertLogo: false },
-    { name: 'Express.js', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/express/express-original.svg', isInvertLogo: true },
-    { name: 'Flask', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/flask/flask-original.svg', isInvertLogo: true }
+    { name: 'R', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/r/r-original.svg', isInvertLogo: false },
+    { name: 'JavaScript', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/javascript/javascript-original.svg', isInvertLogo: false },
+    { name: 'TypeScript', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/typescript/typescript-original.svg', isInvertLogo: false },
+    { name: 'SQL', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/mysql/mysql-original.svg', isInvertLogo: false },
+    { name: 'Git', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/git/git-original.svg', isInvertLogo: false },
+    { name: 'HTML', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/html5/html5-original.svg', isInvertLogo: false },
+    { name: 'CSS', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/css3/css3-original.svg', isInvertLogo: false }
   ];
 
   databases = [
     { name: 'MS SQL', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/microsoftsqlserver/microsoftsqlserver-plain.svg', isInvertLogo: false },
-    { name: 'MongoDB', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/mongodb/mongodb-original.svg', isInvertLogo: false },
     { name: 'PostgreSQL', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/postgresql/postgresql-original.svg', isInvertLogo: false },
-    { name: 'MySQL', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/mysql/mysql-original.svg', isInvertLogo: false }
+    { name: 'MySQL', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/mysql/mysql-original.svg', isInvertLogo: false },
+    { name: 'MongoDB', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/mongodb/mongodb-original.svg', isInvertLogo: false },
+    { name: 'Excel', logo: 'https://img.icons8.com/color/48/microsoft-excel-2019.png', isInvertLogo: false },
+    { name: 'Power BI', logo: 'https://img.icons8.com/color/48/power-bi.png', isInvertLogo: false },
+    { name: 'Tableau', logo: 'https://img.icons8.com/color/48/tableau-software.png', isInvertLogo: false },
+    { name: 'Google Analytics', logo: 'https://img.icons8.com/color/48/google-analytics.png', isInvertLogo: false }
   ];
 
-  opss = [
-    { name: 'Git', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/git/git-original.svg', isInvertLogo: false },
-    { name: 'Docker', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/docker/docker-original.svg', isInvertLogo: false },
-    { name: 'AWS', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/amazonwebservices/amazonwebservices-original-wordmark.svg', isInvertLogo: false },
-    { name: 'Vercel', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/vercel/vercel-original.svg', isInvertLogo: true },
-    { name: 'Netlify', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/netlify/netlify-original.svg', isInvertLogo: false },
-    { name: 'Railway', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/railway/railway-original.svg', isInvertLogo: false },
-    { name: 'CI/CD', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/githubactions/githubactions-original.svg', isInvertLogo: false },
-    { name: 'Nginx', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/nginx/nginx-original.svg', isInvertLogo: false }
+  adminTools = [
+    { name: 'Microsoft Office', logo: 'https://img.icons8.com/color/48/microsoft-office-2019.png', isInvertLogo: false },
+    { name: 'Project Management', logo: 'https://img.icons8.com/color/48/project-management.png', isInvertLogo: false },
+    { name: 'Slack', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/slack/slack-original.svg', isInvertLogo: false },
+    { name: 'Teams', logo: 'https://img.icons8.com/color/48/microsoft-teams.png', isInvertLogo: false },
+    { name: 'Trello', logo: 'https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/trello/trello-original.svg', isInvertLogo: false },
+    { name: 'Calendar Management', logo: 'https://img.icons8.com/color/48/calendar.png', isInvertLogo: false },
+    { name: 'Document Processing', logo: 'https://img.icons8.com/color/48/document.png', isInvertLogo: false },
+    { name: 'Data Entry', logo: 'https://img.icons8.com/color/48/data-configuration.png', isInvertLogo: false }
   ];
 
 }

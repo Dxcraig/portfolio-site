@@ -1,32 +1,32 @@
-<section id="experience" class="section-container">
+<section id="skills" class="section-container">
     <div class="mt-12" data-aos="fade-up" data-aos-duration="1000">
         <h3 class="text-2xl font-semibold mb-4">Skills</h3>
 
-        <h4 class="text-xl font-semibold mb-2">Front-end</h4>
+        <h4 class="text-xl font-semibold mb-2">Data Science & Analytics</h4>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-            @for (frontend of frontends; track frontend) {
+            @for (dataScience of dataSciences; track dataScience) {
             <div class="p-4 rounded-lg shadow-md text-center flex flex-col items-center">
-                <img [src]="frontend.logo" [alt]="frontend.name"
+                <img [src]="dataScience.logo" [alt]="dataScience.name"
                     class="h-10 w-10 mb-2 transition-transform duration-300 transform hover:scale-110"
-                    [class.invert]="frontend?.isInvertLogo">
-                <span class="font-semibold text-lightest-slate">{{ frontend.name }}</span>
+                    [class.invert]="dataScience?.isInvertLogo">
+                <span class="font-semibold text-lightest-slate">{{ dataScience.name }}</span>
             </div>
             }
         </div>
 
-        <h4 class="text-xl font-semibold mb-2 mt-8">Back-end</h4>
+        <h4 class="text-xl font-semibold mb-2 mt-8">Programming & Development</h4>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-            @for (backend of backends; track backend) {
+            @for (programming of programmings; track programming) {
             <div class="p-4 rounded-lg shadow-md text-center flex flex-col items-center">
-                <img [src]="backend.logo" [alt]="backend.name"
+                <img [src]="programming.logo" [alt]="programming.name"
                     class="h-10 w-10 mb-2 transition-transform duration-300 transform hover:scale-110"
-                    [class.invert]="backend?.isInvertLogo">
-                <span class="font-semibold text-lightest-slate">{{ backend.name }}</span>
+                    [class.invert]="programming?.isInvertLogo">
+                <span class="font-semibold text-lightest-slate">{{ programming.name }}</span>
             </div>
             }
         </div>
 
-        <h4 class="text-xl font-semibold mb-2 mt-8">Database</h4>
+        <h4 class="text-xl font-semibold mb-2 mt-8">Database & Analytics Tools</h4>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
             @for (database of databases; track database) {
             <div class="p-4 rounded-lg shadow-md text-center flex flex-col items-center">
@@ -38,14 +38,14 @@
             }
         </div>
 
-        <h4 class="text-xl font-semibold mb-2 mt-8">Ops</h4>
+        <h4 class="text-xl font-semibold mb-2 mt-8">Administrative & Business Tools</h4>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-            @for (ops of opss; track ops) {
+            @for (admin of adminTools; track admin) {
             <div class="p-4 rounded-lg shadow-md text-center flex flex-col items-center">
-                <img [src]="ops.logo" [alt]="ops.name"
+                <img [src]="admin.logo" [alt]="admin.name"
                     class="h-10 w-10 mb-2  transition-transform duration-300 transform hover:scale-110"
-                    [class.invert]="ops?.isInvertLogo">
-                <span class="font-semibold text-lightest-slate">{{ ops.name }}</span>
+                    [class.invert]="admin?.isInvertLogo">
+                <span class="font-semibold text-lightest-slate">{{ admin.name }}</span>
             </div>
             }
         </div>
