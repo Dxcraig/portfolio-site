@@ -1,0 +1,45 @@
+<section id="photos" class="section-container">
+  <h2 class="section-title" data-aos="fade-up">Professional Photos</h2>
+  
+  <div class="max-w-4xl mx-auto">
+    <p class="text-slate text-center mb-12 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+      Professional portraits showcasing my journey as a Traffic Officer transitioning into Data Science.
+    </p>
+    
+    <!-- Photo Grid -->
+    <div class="grid md:grid-cols-2 gap-8">
+      @for (photo of professionalPhotos; track photo.src) {
+        <div class="group" data-aos="fade-up" data-aos-delay="300">
+          <div class="relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500">
+            <!-- Photo Container -->
+            <div class="aspect-[4/5] overflow-hidden">
+              <img 
+                [src]="photo.src" 
+                [alt]="photo.alt"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                loading="lazy">
+            </div>
+            
+            <!-- Photo Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div class="absolute bottom-6 left-6 right-6">
+                <h3 class="text-white text-xl font-semibold mb-2">{{ photo.title }}</h3>
+                <p class="text-white/80 text-sm">Nicholas Acquah Wilson</p>
+              </div>
+            </div>
+            
+            <!-- Border Accent -->
+            <div class="absolute inset-0 border-2 border-green-400/0 group-hover:border-green-400/30 rounded-2xl transition-colors duration-300"></div>
+          </div>
+        </div>
+      }
+    </div>
+    
+    <!-- Additional Info -->
+    <div class="text-center mt-12" data-aos="fade-up" data-aos-delay="500">
+      <p class="text-slate/70 text-sm">
+        Professional photos capturing my dedication to excellence in both operations management and data science.
+      </p>
+    </div>
+  </div>
+</section>
